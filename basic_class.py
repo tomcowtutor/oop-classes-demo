@@ -43,7 +43,7 @@ class Dog(Animal):
         super().__init__(name, age, sound)
         self.breed = breed
         self.tricks = []
-   
+
     def learn_trick(self, trick_name):
         """Learn a new trick"""
 
