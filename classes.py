@@ -83,7 +83,7 @@ class Duck(FlyingMixin, SwimmingMixin, Animal):
         super().__init__(name, age, sound)
 
 
-class Fish(SwimmingMixin, ColourMixin, Animal):
+class Fish(SwimmingMixin, Animal):
     """A class representing a fish -- inherits from Animal"""
     def __init__(self, name, age, sound="blub blub"):
         super().__init__(name, age, sound)
