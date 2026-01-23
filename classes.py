@@ -1,10 +1,15 @@
+import os
+
+os.system("cls")
+
+
 class TalkingMixin:
     """A mixin that adds the talking ability"""
 
     def talk(self):
         """say something"""
         print(f"{self.name} says {self.sound}")
-  
+
     def greet(self):
         """Greet someone"""
         print(f"Hi, I'm {self.name}")
@@ -12,11 +17,11 @@ class TalkingMixin:
 
 class FlyingMixin:
     """A mixin that adds flying ability"""
-    
+
     def fly(self):
         """Take to the air"""
         print(f"{self.name} is flying high!")
-    
+
     def land(self):
         """Come back down"""
         print(f"{self.name} lands gracefully")
@@ -24,11 +29,11 @@ class FlyingMixin:
 
 class SwimmingMixin:
     """A mixin that adds swimming ability"""
-    
+
     def swim(self):
         """Move through water"""
         print(f"{self.name} is swimming")
-    
+
     def dive(self):
         """Go underwater"""
         print(f"{self.name} dives deep")
@@ -38,7 +43,7 @@ class ColourMixin:
     """A mixin that adds colour"""
     def __init__(self, colour="unknown"):
         self.colour = colour
-    
+
     def show_info(self):
         """displays additional info"""
         print(f"   Colour: {self.colour}   ")
