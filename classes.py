@@ -39,16 +39,6 @@ class SwimmingMixin:
         print(f"{self.name} dives deep")
 
 
-class ColourMixin:
-    """A mixin that adds colour"""
-    def __init__(self, colour="unknown"):
-        self.colour = colour
-
-    def show_info(self):
-        """displays additional info"""
-        print(f"   Colour: {self.colour}   ")
-
-
 class Animal:
     """Base class for all animals"""
     def __init__(self, name, age, sound):
@@ -103,7 +93,7 @@ class Fish(SwimmingMixin, ColourMixin, Animal):
         print(f"{self.name} blows bubbles!")
 
 
-class Dog(TalkingMixin, Animal,  ColourMixin):
+class Dog(TalkingMixin, Animal):
     """A class representing a dog -- inherits from Animal"""
     def __init__(self, name, age, sound="Woof Woof!", breed="unknown"):
         super().__init__(name, age, sound)
